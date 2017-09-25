@@ -47,3 +47,27 @@ Capstone project for Udacity Machine Learning Nanodegree
 27. rv2:  Random variable 2, non-dimensional 
 28. Lights: energy use of light fixtures in the house in Wh  
 29. **Appliances: energy use in Wh  (Target Variable)**
+
+### Software Requirements
+
+Python version: 3.5
+
+The software requirements are mentioned in the `requirements.txt`
+ file in top level directory. To install these dependencies, use 
+ the command:-
+ 
+```pip3 install -r requirements.txt```
+
+<br>
+The installation of SciPy would fail on Windows because of absence of
+Numpy + MKL. To install dependencies on windows, follows the steps:-
+
+1. Download NumPy + MKL for the mentioned python version from [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy).
+2. Remove the Numpy's entry from `requirements.txt`.
+3. Run the command: ```pip3 install -r requirements.txt```.
+
+### Running the software
+
+To run the software, navigate to the top level directory and type
+
+```jupyter notebook predict_energy_consumption.ipynb```
